@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Straight to the Point Archery</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<nav>
+  <img class="logo" src="/images/archeryAcademy-logo-white.png" alt="Straight to the Point Archery">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="classes.html#private_lessons">Private Lessons</a></li>
+    <li><a href="instructors.html">Instructors</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">Get in Touch</div>
+  <h1>Contact Us</h1>
+  <p>Have a question about enrollment, classes, or our facility? We'd love to hear from you. Reach out and we'll get back to you promptly.</p>
+</div>
+
+<section class="section--cream" id="contact">
+  <div class="contact-layout">
+
+    <!-- LEFT: Info -->
+    <div>
+      <div class="section-label">Find Us</div>
+      <h2>We're Here to Help</h2>
+      <p class="lead">Stop by, give us a call, or send us an email. We're happy to answer any questions about our programs.</p>
+
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Address</h4>
+          <p>123 Archery Lane<br>Your City, State 00000</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:+15550000000">(555) 000-0000</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:info@straighttothepointarchery.com">info@straighttothepointarchery.com</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">🕐</div>
+        <div>
+          <h4>Hours</h4>
+          <table class="hours-table">
+            <tr><td>Monday – Thursday</td><td>3:00 PM – 8:00 PM</td></tr>
+            <tr><td>Friday</td><td>3:00 PM – 9:00 PM</td></tr>
+            <tr><td>Saturday</td><td>9:00 AM – 5:00 PM</td></tr>
+            <tr><td>Sunday</td><td>9:00 AM – 3:00 PM</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form-wrap">
+      <h3>Send Us a Message</h3>
+      <p class="form-sub">Fill out the form below and we'll get back to you within one business day.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" placeholder="Jane">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" placeholder="Doe">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="jane@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" id="phone" placeholder="(555) 000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">I'm Interested In</label>
+        <select id="subject">
+          <option value="" disabled selected>Select a topic…</option>
+          <option>A101 Basic Archery</option>
+          <option>A102 Intermediate Archery</option>
+          <option>A103 Advanced Archery</option>
+          <option>Private Lessons</option>
+          <option>General Question</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us a bit about your experience level or any questions you have…"></textarea>
+      </div>
+
+      <button class="btn-gold" onclick="handleSubmit()">Send Message</button>
+      <p class="form-note">We typically respond within one business day.</p>
+      <div class="form-success" id="successMsg">
+        ✅ Thank you for your message! We'll be in touch within one business day.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="map-section" id="map">
+  <div class="map-placeholder">
+    <div class="map-label">Our Location</div>
+    <div class="map-addr">123 Archery Lane, Your City, State 00000</div>
+    <a href="https://maps.google.com" target="_blank">Open in Google Maps</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <img class="footer-logo" src="images/archeryAcademy-logo-white.png" alt="Straight to the Point Archery">
+      <p class="footer-about">Professional archery instruction for all skill levels. Located in the heart of the community, committed to excellence and inclusion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Classes</h4>
+      <ul>
+        <li><a href="classes.html#a101">A101 Basic Archery</a></li>
+        <li><a href="classes.html#a102">A102 Intermediate</a></li>
+        <li><a href="classes.html#a103">A103 Advanced</a></li>
+        <li><a href="classes.html#private_lessons">Private Lessons</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html#mission">Our Story</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="about.html#facilities">Facilities</a></li>
+        <li><a href="about.html#nondiscriminatory">Nondiscriminatory Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html#map">Find Us</a></li>
+        <li><a href="tel:+15550000000">Phone</a></li>
+        <li><a href="mailto:info@straighttothepointarchery.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2025 Straight to the Point Archery. All rights reserved.</span>
+    <span class="footer-copy">Nondiscriminatory Policy</span>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit() {
+    const first = document.getElementById('first_name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    if (!first || !email) {
+      alert('Please fill in your name and email address.');
+      return;
+    }
+    document.getElementById('successMsg').style.display = 'block';
+    document.querySelector('.btn-gold').disabled = true;
+    document.querySelector('.btn-gold').style.opacity = '0.6';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+.info-card {
+  background: var(--white);
+  border-radius: 8px;
+  border: 1px solid #e0ddd5;
+  padding: 28px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.info-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brown);
+  margin-bottom: 6px;
+}
+.info-card p,
+.info-card a {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.info-card a:hover {
+  color: var(--green);
+}
+.info-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--green);
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.hours-table {
+  width: 100%;
+  margin-top: 8px;
+}
+.hours-table tr td {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+.hours-table tr td:first-child {
+  font-weight: 600;
+  color: var(--text-dark);
+  width: 140px;
+}
+.contact-form-wrap {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid #e0ddd5;
+  padding: 40px;
+}
+.contact-form-wrap h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.contact-form-wrap .form-sub {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-group label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d0cdc5;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text-dark);
+  background: var(--cream);
+  transition: border-color 0.2s;
+  appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green);
+  background: var(--white);
+}
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+.form-note {
+  font-size: 13px;
+  color: #888;
+  margin-top: 16px;
+  text-align: center;
+}
+.form-success {
+  display: none;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-top: 20px;
+  color: #2e7d32;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.map-section {
+  background: var(--white);
+  padding: 0;
+}
+.map-placeholder {
+  background: var(--green);
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 40px 24px;
+  text-align: center;
+}
+.map-placeholder .map-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.05em;
+}
+.map-placeholder .map-addr {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+}
+.map-placeholder a {
+  margin-top: 8px;
+  background: var(--gold);
+  color: var(--brown);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.map-placeholder a:hover {
+  background: #c49010;
+}
+@media (max-width: 1024px) {
+  .contact-layout,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .contact-layout {
+    gap: 32px;
+  }
+  .info-card {
+    flex-direction: column;
+  }
+  .map-placeholder {
+    min-height: 260px;
+  }
+}

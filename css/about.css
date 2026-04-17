@@ -1,0 +1,154 @@
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-top: 48px;
+}
+.mission-img-placeholder {
+  background: var(--green);
+  border-radius: 10px;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.mission-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.values-section {
+  background: var(--white);
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.value-card {
+  background: var(--cream);
+  border-radius: 8px;
+  border: 1px solid #e0ddd5;
+  padding: 32px 28px;
+}
+.value-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--green);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+.value-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--brown);
+  margin-bottom: 10px;
+}
+.value-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+.facilities-section {
+  background: var(--cream);
+}
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.facility-item {
+  background: var(--white);
+  border-radius: 8px;
+  border: 1px solid #e0ddd5;
+  padding: 28px 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.facility-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.facility-item h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.facility-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+.policy-section {
+  background: var(--brown);
+  padding: 72px 80px;
+}
+.policy-section .section-label {
+  color: var(--gold);
+}
+.policy-section h2 {
+  color: var(--white);
+}
+.policy-box {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(218,165,32,0.3);
+  padding: 40px;
+  margin-top: 32px;
+  max-width: 800px;
+}
+.policy-box p {
+  font-size: 15px;
+  color: rgba(245,245,220,0.8);
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+.policy-box p:last-child {
+  margin-bottom: 0;
+}
+.body-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .mission-grid,
+  .values-grid,
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .mission-img-placeholder {
+    height: auto;
+    padding: 32px 20px;
+  }
+  .policy-section {
+    padding: 48px 20px;
+  }
+  .policy-box {
+    padding: 28px 20px;
+  }
+}
